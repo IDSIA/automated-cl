@@ -4,10 +4,16 @@ This is the official code repository for the paper:
 
 [Automating Continual Learning]() (link coming soon)
 
+
+<div>
+<img src="fig_acl.png" alt="ACL overview" width="80% align="middle">
+</div>    
+
 This codebase is originally forked from [IDSIA/modern-srwm](https://github.com/IDSIA/modern-srwm)
 which we modified for continual learning (also including improved practical settings for self-referential weight matrices, e.g., better initialization strategy).
 
 NB: this is research code with many sub-optimal implementations (search for `NB:` in `main.py` for various comments).
+
 
 ### Acknowledgement
 
@@ -37,6 +43,7 @@ We used PyTorch `1.10.2+cu102` or `1.11.0` in our experiments but newer versions
 
 Example training and evaluation scripts are provided under `scripts`.
 Our pre-trained model checkpoints can be downloaded from this [Google drive link](https://drive.google.com/file/d/1fJJBnuxefiSNNUDVB3h-J41fa-t0youM/view?usp=sharing).
+
 
 ## BibTex
 ```
