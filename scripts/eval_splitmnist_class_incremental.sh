@@ -9,17 +9,15 @@ CODE=
 DATA=
 
 # trained model path:
-# for example: ../automated_cl_checkpoints_Nov2023/2task/best_model.pt
-OB_MODEL= 
+# for example: ../automated_cl_checkpoints_Nov2023/split_class_incremental_om_metatrain_mnist_metaval
+OB_MODEL=
 
-# For 5-task/standard setting, replace 
-# --eval_splitmnist_incremental_class_2task by --eval_splitmnist_incremental_class
-
-# For the MNIST metaval model checkpoint, use --k_shot 5
+# For 2-task setting, replace --eval_splitmnist_incremental_class by
+# --eval_splitmnist_incremental_class_2task
 
 python3 ${CODE}/main.py \
   --data_dir ${DATA} \
-  --eval_splitmnist_incremental_class_2task \
+  --eval_splitmnist_incremental_class \
   --eval_only_dir ${OB_MODEL} \
   --name_dataset miniimagenet_32_norm_cache \
   --seed ${SEED} \
@@ -37,8 +35,8 @@ python3 ${CODE}/main.py \
   --ff_factor 2 \
   --dropout 0.1 \
   --vision_dropout 0.1 \
-  --k_shot 15 \
-  --n_way 5 \
+  --k_shot 5 \
+  --n_way 10 \
   --test_per_class 1 \
   --extra_label \
   --use_fs \

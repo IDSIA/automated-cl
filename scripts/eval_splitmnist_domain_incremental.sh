@@ -9,10 +9,13 @@ CODE=
 DATA=
 
 # trained model path:
-# for example: ../automated_cl_checkpoints_Nov2023/2task/best_model.pt
+# for example: ../automated_cl_checkpoints_Nov2023/2task/
 OB_MODEL= 
 
 # For the MNIST metaval model checkpoint, use --k_shot 5
+
+# For evaluation on other datasets, replace --eval_splitmnist
+# by --eval_splitfashion or --eval_splitcifar10
 
 python3 ${CODE}/main.py \
   --data_dir ${DATA} \
@@ -35,7 +38,7 @@ python3 ${CODE}/main.py \
   --dropout 0.1 \
   --vision_dropout 0.1 \
   --k_shot 15 \
-  --n_way 5 \
+  --n_way 2 \
   --test_per_class 1 \
   --extra_label \
   --use_fs \
