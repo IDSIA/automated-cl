@@ -2,7 +2,7 @@
 
 This is the official code repository for the paper:
 
-[Automating Continual Learning]() (link coming soon)
+[Automating Continual Learning](https://arxiv.org/abs/2312.00276)
 
 
 <div>
@@ -47,5 +47,10 @@ Our pre-trained model checkpoints can be downloaded from this [Google drive link
 
 ## BibTex
 ```
-Coming soon
+@article{irie2023automating,
+  title={Automating Continual Learning},
+  author={Irie, Kazuki and Csord{\'a}s, R{\'o}bert and Schmidhuber, J{\"u}rgen},
+  journal={Preprint arXiv:2312.00276},
+  year={2023}
+}
 ```
