@@ -42,7 +42,7 @@ We used PyTorch `1.10.2+cu102` or `1.11.0` in our experiments but newer versions
 ### Training & Evaluation 
 
 Example training and evaluation scripts are provided under `scripts`.
-Our pre-trained model checkpoints can be downloaded from this [Google drive link](https://drive.google.com/file/d/1fJJBnuxefiSNNUDVB3h-J41fa-t0youM/view?usp=sharing).
+Our pre-trained model checkpoints can be downloaded from this [Google drive link](https://drive.google.com/file/d/13QWED2TRG-JHF8Hiy4NY461cTrvtCLgc/view?usp=sharing).
 
 
 ## BibTex
